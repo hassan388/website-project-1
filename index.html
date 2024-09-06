@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" 
+    crossorigin>
+    <link rel="stylesheet" href="Styles/home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    
+    <header id="commom_header" class="index_header">
+        <!-- This Is the Main header -->
+    </header>
+    <main class="main">
+        <section class="hero_container">
+            <div class="left_hero_section">
+                <h1 class="hero_title"> Autumn, </h1>
+                <p class="hero_description">Autumn, It's a time for cozy sweaters, warm drinks, and gatherings around bonfires. Harvest festivals and celebrations bring people together, celebrating the bounty of the season. Autumn's beauty lies in its fleeting moments, reminding us of the cycle of change and renewal in nature.</p>
+                <button class="hero_button">Get Started</button>
+            </div>
+            <div class="right_hero_section">
+                <img src="Resources/backgrounds/autunm.jpg" alt="" class="hero_wallpaper" >
+            </div>
+        </section>
+        <div class="feature_div">
+            <section class="feature_container">
+                <div class="feature_card">
+                    <img src="Resources/backgrounds/spring.jpg" alt="image loading...">
+                    <div class="feature_card_description">
+                        <h2>Sring,</h2>
+                        <p>Spring is a season of renewal and growth, marked by blooming flowers, budding trees, and the return...</p>
+                    </div>
+                    
+                </div>
+                <div class="feature_card">
+                    <img src="Resources/backgrounds/summer.jpg" alt="image loading...">
+                    <div class="feature_card_description">
+                        <h2>Summer,</h2>
+                        <p>Summer is a season of warmth and sunshine, characterized by long days, bright skies, and outdoor...</p>
+                    </div>
+                </div>
+                <div class="feature_card">
+                    <img src="Resources/backgrounds/winter.jpg" alt="image loading...">
+                    <div class="feature_card_description">
+                        <h2>Winter,</h2>
+                        <p>Winter is a season of cold temperatures, marked by snow-covered landscapes, frosty...</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    
+
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('commom_header').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

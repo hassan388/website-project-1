@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    background-color:white;
+    height: 1100px;
+    
+}
+
+.index_header{
+    margin: none;
+    padding: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:whitesmoke ;
+    box-shadow:1px 1px 10px 1px rgba(0,0,0,.3);
+    z-index: 100;
+    position: fixed; 
+    position: sticky; /* Makes the header sticky */
+    top: 0; /* Position at the top */
+    z-index: 1000;
+}
+
