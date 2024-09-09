@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/about.css">
+</head>
+<body>
+    <header id="commom_header" class="index_header"></header>
+        <!-- This Is the Main header -->
+    </header>
+    <h1>this is ABOUT page </h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit aliquid sequi et nam modi, deserunt dicta dolorem officia quas dolore blanditiis cupiditate facere accusamus esse eligendi ipsum tempore repudiandae! Assumenda!</p>
+    <div class="footer_main" id="common_footer"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('commom_header').innerHTML = data;
+            });
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('common_footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

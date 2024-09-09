@@ -1,0 +1,7 @@
+body{
+    margin: none;
+    padding: none;
+    font-family: "Roboto", system-ui;
+    height: 100vh;
+    background-color: rgb(125, 252, 250);
+}

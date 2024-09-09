@@ -1,0 +1,12 @@
+.footer{
+    margin: none;
+    padding: none;
+    font-family: "Roboto", system-ui;
+    height: auto;
+    width: 100%;
+    background-color: beige;
+    bottom:0;
+    margin-bottom: 0;
+    position: -webkit-sticky;
+    position: relative;
+}
