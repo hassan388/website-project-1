@@ -52,6 +52,9 @@ a{
     color: rgb(29, 167, 231);
     
 }
+.items li :active{
+    color: rgb(29, 167, 231);
+}
 
 @media(max-width:768px){
 
