@@ -3,10 +3,28 @@
     padding: none;
     font-family: "Roboto", system-ui;
     height: auto;
-    width: 100%;
-    background-color: beige;
-    bottom:0;
-    margin-bottom: 0;
-    position: -webkit-sticky;
-    position: relative;
+    width: 80%;
+    padding-bottom:50px;   
+}
+.footer_body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch; 
+    color: rgb(234, 232, 232);
+}
+.footer_body li{
+    list-style-type: none;
+    margin-top: 5px;
+}
+.footer_body span{
+    font-size: larger;
+    font-weight: bold;
+    color: rgb(42, 41, 41);
+}
+.footer_contacts li{
+    cursor: pointer;
+}
+.footer_contacts li:hover{
+    list-style-type:disc;
 }
